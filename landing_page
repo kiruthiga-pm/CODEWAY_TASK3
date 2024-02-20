@@ -1,0 +1,336 @@
+****************************************************** HTML ******************************************************
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="land.css" />
+    <title>HOMES.in</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo"><img src="h7.png" style="width:20px;height:20px;"><a href="#">HOMES.in</a></div>
+      <ul class="nav__links">
+        <li class="link">Home</li>
+        <li class="link">Features</li>
+        <li class="link">About Us</li>
+        <li class="link">Contact Us</li>
+      </ul>
+      <div class="search__box">
+        <input type="text" placeholder="Search" />
+        <i class="ri-search-line"></i>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="container__left">
+        <div class="content">
+          <h1>DISCOVER YOUR PERFECT<p id="colo">HOME...</p></h1>
+          <p>
+            "Uncover Your Dream Space at Homes.in, where plots and homes converge to create your ideal
+            sanctuary. From sprawling plots with endless potential to ready-to-move-in homes designed 
+            for your comfort, we curate spaces that resonate with your vision. Explore a collection of 
+            properties that go beyond bricks and mortar, embodying the essence of your aspirations. 
+            Elevate your living experience with Homes.in - where every plot tells a story, and every
+            home is a chapter in your journey."
+          </p>
+          <div class="btns">
+            <button>Read More</button>
+            <button>EXPLORE</button>
+          </div>
+        </div>
+      </div>
+      <div class="container__right">
+        <form>
+          <h4>Want to upgrade your lifestyle?</h4>
+          <div class="form__group">
+            <label for="destination">NAME</label>
+            <input
+              type="text"
+              name="destination"
+              id="destination"
+              placeholder="enter name"
+            />
+          </div>
+          <div class="form__group">
+            <label for="date">EMAIL</label>
+            <input type="mail" name="date" id="date" placeholder="enter email" />
+          </div>
+          <button type="submit">SIGN IN</button>
+        </form>
+      </div>
+    </div>
+    <section class="about" id="My Projects">
+      <div class="content">
+        <div class="title">
+          <span>Courses</span>
+        </div>
+        <div class="boxes">
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank">
+                PLOTS
+              </a>
+            </div>
+            <p>
+              The term DSA stands for Data 
+              Structures and Algorithms. As 
+              the name itself suggests, it 
+              is a combination of two 
+              separate yet interrelated 
+              topics.
+            </p>
+          </div>
+          <div class="box">
+  
+            <div class="topic">
+              <a href="" target="_blank">
+                RESIDENTIAL APARTMENTS
+              </a>
+            </div>
+            <p>
+              HTML stands for HyperText 
+              Markup Language. It is used 
+              to design web pages using 
+              the markup language.
+            </p>
+          </div>
+  
+          <div class="box">
+            <div class="topic">
+              <a href="" target="_blank">
+                VILLAS
+              </a>
+            </div>
+            <p>
+              JavaScript (JS) is the most 
+              popular lightweight, interpreted 
+              compiled programming language.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <span>
+          &copy; Created By
+          <a href="https://www.Homes.in/"
+            target="_blank">
+            HOMES.IN
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
+****************************************************** CSS ******************************************************
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+:root {
+  --primary-color: #fead53;
+  --text-dark: #333333;
+  --text-light: #ffffff33;
+  --extra-light: #f3f4f6;
+  --max-width: calc(100%);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+input::placeholder {
+  color: var(--extra-light);
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  background-image:url(h4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.nav__logo a {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: var(--primary-color);
+}
+.nav__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.nav__links .link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--extra-light);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nav__links .link:hover {
+  color: var(--primary-color);
+}
+.search__box {
+  padding: 0.5rem 0;
+  border-bottom: 2px solid var(--extra-light);
+}
+.search__box input {
+  color: var(--extra-light);
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.search__box i {
+  color: var(--extra-light);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem;
+  padding-top: 100px;
+  position: relative;
+}
+.container__left,
+.container__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container__left .content {
+  max-width: 700px;
+  display: grid;
+  gap: 1rem;
+}
+.content h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: var(--extra-light);
+  font-weight: 700;
+}
+#colo{
+  color:#fead53;
+}
+.content p {
+  color: var(--extra-light);
+  margin-bottom:2rem;
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+}
+.btns button {
+  padding: 0.5rem 2rem;
+  color: var(--extra-light);
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--extra-light);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: var(--primary-color);
+}
+.container__right {
+  justify-content: flex-end;
+}
+form {
+  width: 350px;
+  display: grid;
+  border-radius: 5px;
+  background-color: var(--text-light);
+  color: var(--extra-light);
+}
+form h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+.form__group {
+  display: grid;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.form__group input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--extra-light);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--extra-light);
+}
+form button {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--extra-light);
+  cursor: pointer;
+}
+section .topic a {
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 10px;
+  color:#fead53;
+}
+.about .boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  margin-bottom: 25px;
+}
+.about .boxes .box {
+	margin: 10px 20px;
+	max-width: calc(100% / 3 - 50px);
+	text-align: center;
+	border-radius: 12px;
+	padding: 30px 10px;
+	box-shadow: 0 5px 10px rgba(247, 204, 152, 0.884);
+	cursor: default;
+}
+footer {
+	background: var(--primary-color);
+	padding: 15px 0;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+}
+footer .footer span {
+	font-size: 17px;
+	font-weight: 400;
+	color: var(--white-color);
+}
+footer .footer span a {
+	font-weight: 500;
+	color: var(--white-color);
+}
+footer .footer span a:hover {
+	text-decoration: underline;
+}
